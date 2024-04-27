@@ -45,7 +45,7 @@ export const TracingBeam = ({
       ref={ref}
       className={cn("relative w-full max-w-4xl mx-auto h-full", className)}
     >
-      <div className="absolute -left-4 md:-left-20 top-3">
+      <div className="absolute -left-4 sm:left-8 md:left-0 top-3">
         <div className="h-[18px] w-[18px] rounded-full border-[4px] border-th-primary ml-[25px] " />
         <p className="text-th-accent font-bold uppercase rotate-90 absolute left-[4.5px] top-[380.5px] [text-shadow:0px_6px_20px_#b41817]">
           Scroll

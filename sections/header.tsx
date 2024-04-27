@@ -11,7 +11,7 @@ import { MenuFooterItem } from "@/components/header/menu-footer-item";
 export const Header = () => {
   return (
     <header>
-      <nav className="py-[15px] px-[12px] flex items-center justify-between">
+      <nav className="py-[15px] px-[12px] flex items-center justify-between max-w-[840px] mx-auto">
         <h3
           className="text-[24px] font-bold text-white"
           aria-label="Sajawal Hassan, author name"
