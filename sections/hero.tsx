@@ -7,24 +7,24 @@ import { TypeAnimation } from "react-type-animation";
 
 export const Hero = () => {
   return (
-    <main className="relative px-[40px] sm:px-[120px] md:px-[140px] pt-[100px]">
-      <div className="flex flex-col items-center justify-between absolute min-h-[25rem] inset-0 m-auto mt-3 md:flex-row md:-left-10">
+    <main className="relative px-[40px] sm:px-[120px] md:px-[140px]">
+      <div className="flex flex-col left-12 sm:left-32 justify-between absolute min-h-[25rem] mt-3 md:flex-row -top-20 md:-left-10 md:-right-20 xl:top-0">
         <Image
           src={Bracket}
           width={250}
           height={250}
           alt="Bracket open"
-          className="md:-rotate-90"
+          className="md:-rotate-90 xl:w-[280px] xl:h-[280px] 2xl:w-[300px] 2xl:h-[300px]"
         />
         <Image
           src={Bracket}
           width={250}
           height={250}
           alt="Bracket close"
-          className="md:rotate-90 rotate-180"
+          className="md:rotate-90 rotate-180 xl:w-[280px] xl:h-[280px] 2xl:w-[300px] 2xl:h-[300px]"
         />
       </div>
-      <h1 className="font-bold text-[26px] sm:text-[34px]">
+      <h1 className="font-bold text-[26px] sm:text-[34px] xl:text-[40px] 2xl:text-[45px] pt-10 ml-5">
         Hi, I'm <br />
         <span className="bg-gradient-to-r from-th-primary to-th-secondary bg-clip-text text-transparent">
           Sajawal Hassan
@@ -43,7 +43,8 @@ export const Hero = () => {
           repeat={Infinity}
         />
       </h1>
-      <p className="text-th-primary font-bold text-[18px] mt-[24px]">
+
+      <p className="text-th-primary font-bold text-[18px] mt-[24px] md:hidden">
         Go deeper...
       </p>
     </main>

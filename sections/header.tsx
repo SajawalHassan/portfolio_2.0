@@ -3,6 +3,7 @@ import Github from "@/assets/icons/github_icon.svg";
 import Youtube from "@/assets/icons/youtube_icon.svg";
 import Linkedin from "@/assets/icons/linkedin_icon.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { MenuItem } from "@/components/header/menu-item";
@@ -11,21 +12,40 @@ import { MenuFooterItem } from "@/components/header/menu-footer-item";
 export const Header = () => {
   return (
     <header>
-      <nav className="py-[15px] px-[12px] flex items-center justify-between max-w-[840px] mx-auto">
+      <nav className="py-[15px] px-[12px] md:px-[30px] flex items-center justify-between max-w-[840px] xl:max-w-[1340px] mx-auto">
         <h3
-          className="text-[24px] font-bold text-white"
+          className="text-[24px] xl:text-[30px] font-bold text-white"
           aria-label="Sajawal Hassan, author name"
         >
-          <span className="font-bold text-[26px] text-th-primary">{"{"}</span>
+          <span className="font-bold text-[26px] xl:text-[32px] text-th-primary">
+            {"{"}
+          </span>
           Sajawal
-          <span className="font-bold text-[26px] text-th-primary">{"}"}</span>
+          <span className="font-bold text-[26px] xl:text-[32px] text-th-primary">
+            {"}"}
+          </span>
         </h3>
+
+        <div className="items-center gap-x-6 hidden md:flex">
+          <Link className="xl:text-[18px]" href={"#about"}>
+            About.tsx
+          </Link>
+          <Link className="xl:text-[18px]" href={"#projects"}>
+            Projects.tsx
+          </Link>
+          <Link className="xl:text-[18px]" href={"#process"}>
+            Creation-Process.tsx
+          </Link>
+          <Link className="xl:text-[18px]" href={"#contact"}>
+            Contact.tsx
+          </Link>
+        </div>
 
         <Drawer>
           <DrawerTrigger asChild>
             <div
               aria-label="Menu"
-              className="py-[5px] px-[8px] rounded-[2.5px] border-[1px] border-th-secondary cursor-pointer"
+              className="py-[5px] px-[8px] rounded-[2.5px] border-[1px] border-th-secondary cursor-pointer md:hidden"
             >
               <Image src={Menu} width={13.71} height={12} alt="Burger Icon" />
             </div>
