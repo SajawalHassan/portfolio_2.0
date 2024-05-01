@@ -1,4 +1,5 @@
 // NOT FROM SHADCN UI, CUSTOM MADE
+
 "use client";
 import {cn} from "@/lib/utils";
 import {useState} from "react";
@@ -137,7 +138,7 @@ export const DefineReturnCode = ({numOfDots, lineNum, stringText, type}: DefineR
   return (
     <CodeLine numOfDots={numOfDots} lineNum={lineNum}>
       <KeywordCode text="return" />
-      {type === "array" && <PlainCode text="[" />}
+      {type === "array" && <PlainCode text=" [" />}
       <StringCode text={stringText} />
       {type === "array" && <PlainCode text="]" />}
       <PlainCode text=";" />

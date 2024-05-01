@@ -8,7 +8,7 @@ import {TypeAnimation} from "react-type-animation";
 export const Hero = () => {
   return (
     <main className="relative">
-      <div className="flex flex-col left-12 sm:left-32 justify-between absolute min-h-[25rem] mt-3 md:flex-row -top-20 md:-left-10 md:-right-20 xl:top-0">
+      <div className="flex flex-col left-[10px] sm:left-32 justify-between absolute min-h-[25rem] mt-3 md:flex-row -top-20 md:-left-10 md:-right-20 xl:top-0">
         <Image
           src={Bracket}
           width={250}
@@ -24,8 +24,8 @@ export const Hero = () => {
           className="md:rotate-90 rotate-180 xl:w-[280px] xl:h-[280px] 2xl:w-[300px] 2xl:h-[300px]"
         />
       </div>
-      <div className="pl-[30px] sm:pl-[60px] md:pl-[100px] pt-10 ml-5">
-        <h1 className="font-bold text-[26px] sm:text-[34px] xl:text-[40px] 2xl:text-[45px]">
+      <div className="pl-[10px] sm:pl-[60px] md:pl-[100px] pt-10 ml-5">
+        <h1 className="font-bold text-[23px] sm:text-[34px] xl:text-[40px] 2xl:text-[45px]">
           Hi, I'm <br />
           <span className="bg-gradient-to-r from-th-primary to-th-secondary bg-clip-text text-transparent">Sajawal Hassan</span>
           .<br className="sm:hidden" /> I am a<br />
