@@ -1,7 +1,7 @@
 "use client";
-import React, {useEffect, useRef, useState} from "react";
-import {motion, useTransform, useScroll, useSpring} from "framer-motion";
-import {cn} from "@/lib/utils";
+import React, { useEffect, useRef, useState } from "react";
+import { motion, useTransform, useScroll, useSpring } from "framer-motion";
+import { cn } from "@/lib/utils";
 
 export const TracingBeam = ({
   children,
@@ -13,7 +13,7 @@ export const TracingBeam = ({
   childrenClassName?: string;
 }) => {
   const ref = useRef<HTMLDivElement>(null);
-  const {scrollYProgress} = useScroll({
+  const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start start", "end start"],
   });
@@ -37,7 +37,7 @@ export const TracingBeam = ({
   });
 
   return (
-    <motion.div ref={ref} className={cn("relative w-full max-w-[840px] xl:max-w-[1340px] mx-auto h-full mt-[100px]", className)}>
+    <motion.div ref={ref} className={cn("relative w-full max-w-[1000px] xl:max-w-[1500px] mx-auto h-full mt-[100px]", className)}>
       <div className="absolute -left-4 sm:left-8 md:left-0 top-3">
         <div className="h-[18px] w-[18px] rounded-full border-[4px] border-th-primary ml-[25px] " />
         <p className="text-th-accent font-bold uppercase rotate-90 absolute left-[4.5px] top-[380.5px] [text-shadow:0px_6px_20px_#b41817]">Scroll</p>
@@ -82,7 +82,7 @@ export const TracingBeam = ({
           </defs>
         </svg>
       </div>
-      <div ref={contentRef} className={cn("px-[40px] sm:pl-[80px] md:pl-[80px]", childrenClassName)}>
+      <div ref={contentRef} className={cn("px-[40px] sm:pl-[80px]", childrenClassName)}>
         {children}
       </div>
     </motion.div>

@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className="text-white min-h-screen">
       <Header />
-      <TracingBeam childrenClassName="space-y-[280px]">
+      <TracingBeam childrenClassName="space-y-[380px]">
         <Hero />
         <About />
       </TracingBeam>
