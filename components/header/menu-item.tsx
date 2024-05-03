@@ -1,15 +1,22 @@
+import Link from "next/link";
+
 interface Props {
   text: string;
+  link: string;
+  setDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-export const MenuItem = ({ text }: Props) => {
+export const MenuItem = ({ text, link, setDrawerOpen }: Props) => {
   return (
-    <div aria-label="Menu item" className="text-white w-full mx-auto flex flex-col items-center">
-      <div className="relative z-10">
-        <h3 className="text-[20px] sm:text-[22px] cursor-pointer font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 text-transparent bg-clip-text animate-gradient shadow-lg">
-          {text}
-        </h3>
-      </div>
-    </div>
+    <Link
+      href={link}
+      scroll={true}
+      aria-label="Menu item"
+      className="text-white w-full mx-auto flex flex-col items-center"
+      onClick={() => setDrawerOpen(false)}>
+      <h3 className="text-[20px] sm:text-[22px] cursor-pointer font-bold bg-gradient-to-r from-gray-400 via-white to-gray-400 text-transparent bg-clip-text animate-gradient shadow-lg">
+        {text}
+      </h3>
+    </Link>
   );
 };

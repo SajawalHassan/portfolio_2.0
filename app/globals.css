@@ -86,6 +86,10 @@ body {
   overflow-x: hidden;
 }
 
+* {
+  scroll-behavior: smooth;
+}
+
 .animate-gradient {
   background-size: 300%;
   -webkit-animation: animatedgradient 5s ease infinite;
