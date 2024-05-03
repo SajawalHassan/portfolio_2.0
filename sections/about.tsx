@@ -18,14 +18,14 @@ import {
 export const About = () => {
   return (
     <section className="relative px-[10.5px] xl:ml-[40px] max-w-[1000px] xl:max-w-[1400px] border-2 lg:border-none border-th-primary rounded-[10px]">
-      <div className="lg:hidden mx-auto w-max text-center">
+      <div className="lg:hidden mx-auto md:mx-0 md:pl-6 w-max text-center md:text-start my-3">
         <h3 className="text-[22px] font-bold text-white opacity-75" aria-label="Sajawal Hassan, author name">
           <span className="font-bold text-[24px] text-th-primary">{"{"}</span>
           About.tsx
           <span className="font-bold text-[24px] text-th-primary">{"}"}</span>
         </h3>
 
-        <div className="w-[270px] min-h-[160px] sm:w-[310px] sm:h-[180px] md:w-[350px] md:h-[220px] relative mt-2">
+        <div className="w-[270px] min-h-[160px] sm:w-[310px] sm:h-[180px] md:w-[380px] md:h-[250px] relative mt-2">
           <Image src={MeAtDinner} alt="Me at dinner" fill className="rounded-[10px] object-cover" />
         </div>
       </div>
@@ -41,7 +41,7 @@ export const About = () => {
           <Image src={LightBulb} alt="light bulb" fill className="object-cover" />
         </div>
       </div>
-      <CodeBlock className="pb-2 pt-4 px-2 lg:border-2 lg:border-th-primary rounded-[10px] rounded-tl-none">
+      <CodeBlock className="pb-2 pt-4 px-2 md:px-6 lg:border-2 lg:border-th-primary rounded-[10px] rounded-tl-none">
         <CodeSection>
           <CodeLine parentClassName="hover:bg-transparent" lineNum={0} showLineNum={false}>
             <CommentCode text="Creative, Hard-working, Cooperative. A perfect mixture" />

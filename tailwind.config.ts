@@ -1,8 +1,8 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 
-import type {Config} from "tailwindcss";
-const {default: flattenColorPalette} = require("tailwindcss/lib/util/flattenColorPalette");
+import type { Config } from "tailwindcss";
+const { default: flattenColorPalette } = require("tailwindcss/lib/util/flattenColorPalette");
 
 const config = {
   darkMode: ["class"],
@@ -67,12 +67,12 @@ const config = {
       },
       keyframes: {
         "accordion-down": {
-          from: {height: "0"},
-          to: {height: "var(--radix-accordion-content-height)"},
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
-          from: {height: "var(--radix-accordion-content-height)"},
-          to: {height: "0"},
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
         },
       },
       animation: {
@@ -85,7 +85,7 @@ const config = {
 } satisfies Config;
 
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({addBase, theme}: any) {
+function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(Object.entries(allColors).map(([key, val]) => [`--${key}`, val]));
 

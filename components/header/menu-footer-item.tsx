@@ -9,8 +9,8 @@ interface Props {
 
 export const MenuFooterItem = ({ link, image, alt }: Props) => {
   return (
-    <a href={link} target="_blank">
-      <Image src={image} width={24} height={24} alt={alt} />
+    <a href={link} target="_blank" className="relative w-[24px] h-[24px] sm:w-[28px] sm:h-[28px]">
+      <Image src={image} fill alt={alt} />
     </a>
   );
 };

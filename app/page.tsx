@@ -5,7 +5,7 @@ import { Hero } from "@/sections/hero";
 
 export default function Home() {
   return (
-    <div className="text-white min-h-screen">
+    <div className="text-white min-h-screen w-screen">
       <Header />
       <TracingBeam childrenClassName="space-y-[380px]">
         <Hero />

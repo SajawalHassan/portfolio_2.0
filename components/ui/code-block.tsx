@@ -45,7 +45,7 @@ export const CodeLine = ({ children, className, parentClassName, numOfDots = 0, 
     <div className={cn("flex gap-x-2 hover:bg-th-accent hover:bg-opacity-10 py-0.5", parentClassName)}>
       {showLineNum && <p className="hidden sm:block text-gray-600">{lineNum}</p>}
       <div className={cn("flex items-start", numOfDots !== 0 && "sm:gap-x-2")}>
-        {numOfDots > 0 && <Dots numOfDots={numOfDots} className="mt-2.5 md:mt-3.5" />}
+        {numOfDots > 0 && <Dots numOfDots={numOfDots} className="mt-2.5 md:mt-3" />}
         <div className={cn(className)}>{children}</div>
       </div>
     </div>
