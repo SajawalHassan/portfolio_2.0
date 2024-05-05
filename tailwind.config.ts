@@ -31,6 +31,7 @@ const config = {
         "th-accent": "#B41817",
         "th-secondary": "#FED0BC",
         "th-bg": "#211818",
+        "th-bg2": "#0F0909",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",

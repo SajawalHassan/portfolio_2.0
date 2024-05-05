@@ -44,7 +44,6 @@ export const Header = () => {
     };
 
     window.addEventListener("scroll", onScroll);
-    console.log(scrollDir);
 
     return () => window.removeEventListener("scroll", onScroll);
   }, [scrollDir]);
@@ -62,7 +61,7 @@ export const Header = () => {
           <span className="font-bold text-[26px] xl:text-[32px] text-th-primary">{"}"}</span>
         </Link>
 
-        <div className="items-center gap-x-3 hidden md:flex">
+        <div className="items-center gap-x-5 hidden md:flex">
           <HeaderLink text="About.tsx" link="#about" />
           <HeaderLink text="Projects.tsx" link="#projects" />
           <HeaderLink text="Creation.tsx" link="#creation" />

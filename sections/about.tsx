@@ -1,6 +1,6 @@
 import Image from "next/image";
 import MeAtDinner from "@/assets/me-at-dinner.jpg";
-import LightBulb from "@/assets/lightbulb.png";
+import LightBulb from "@/assets/lightbulb-2.png";
 import MeAtDinnerVertical from "@/assets/me-at-dinner-vertical.jpg";
 import {
   CodeBlock,
@@ -18,7 +18,7 @@ import {
 export const About = () => {
   return (
     <section
-      className="relative px-[10.5px] xl:ml-[40px] max-w-[1000px] xl:max-w-[1400px] border-2 lg:border-none border-th-primary rounded-[10px]"
+      className="relative px-[10.5px] xl:ml-[40px] max-w-[1000px] xl:max-w-[1400px] border-2 lg:border-none border-th-primary rounded-[10px] bg-th-bg2 lg:bg-transparent"
       id="about">
       <div className="lg:hidden mx-auto md:mx-0 md:pl-6 w-max text-center md:text-start my-3">
         <h3 className="text-[22px] font-bold text-white opacity-75" aria-label="Sajawal Hassan, author name">
@@ -39,11 +39,11 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="w-[517px] h-[342px] xl:w-[600px] xl:h-[400px] relative hidden lg:block mx-auto">
+        <div className="w-[517px] h-[330px] xl:w-[700px] relative hidden lg:block mx-auto">
           <Image src={LightBulb} alt="light bulb" fill className="object-cover" />
         </div>
       </div>
-      <CodeBlock className="pb-2 pt-4 lg:border-2 lg:border-th-primary rounded-[10px] rounded-tl-none lg:bg-th-primary bg-opacity-[0.08]">
+      <CodeBlock className="pb-2 pt-4 lg:border-2 lg:border-th-primary rounded-[10px] rounded-tl-none bg-th-bg2">
         <CodeSection>
           <CodeLine parentClassName="hover:bg-transparent" lineNum={0} showLineNum={false}>
             <CommentCode text="Creative, Hard-working, Cooperative. A perfect mixture" />
